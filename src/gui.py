@@ -77,7 +77,7 @@ class URLClassifierGUI(QMainWindow):
             QMessageBox.warning(self, "警告", "请先选择模型文件！")
             return
             
-        url = "https://" + self.url_input.text().strip()
+        url = self.url_input.text().strip()
         print(url)
         if not url:
             QMessageBox.warning(self, "警告", "请输入URL！")
